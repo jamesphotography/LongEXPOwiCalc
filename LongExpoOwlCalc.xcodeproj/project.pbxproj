@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9736D1602D25B20400FA2988 /* InitialSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9736D15F2D25B20000FA2988 /* InitialSetupView.swift */; };
+		973BC9532D2580DF00A21086 /* CalculationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973BC9522D2580DB00A21086 /* CalculationMode.swift */; };
+		97579E7B2C8EE28800C2F9DA /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97579E7A2C8EE28800C2F9DA /* CountdownView.swift */; };
+		97579E7D2C8EE98A00C2F9DA /* countdown_finish.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 97579E7C2C8EE98A00C2F9DA /* countdown_finish.mp3 */; };
+		97579E822C8F19A400C2F9DA /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 97579E812C8F19A400C2F9DA /* Localizable.xcstrings */; };
+		9771957F2C9BD6BA00D1E40C /* FilterSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9771957E2C9BD6B700D1E40C /* FilterSelectionView.swift */; };
+		978689742C7C52CA006DD303 /* LongExpoOwlCalcApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978689732C7C52CA006DD303 /* LongExpoOwlCalcApp.swift */; };
+		978689762C7C52CA006DD303 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978689752C7C52CA006DD303 /* ContentView.swift */; };
+		978689782C7C52CC006DD303 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 978689772C7C52CC006DD303 /* Assets.xcassets */; };
+		9786897B2C7C52CC006DD303 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9786897A2C7C52CC006DD303 /* Preview Assets.xcassets */; };
+		978689832C7C675F006DD303 /* Settingsview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978689822C7C675F006DD303 /* Settingsview.swift */; };
+		978689872C7C7692006DD303 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978689862C7C7692006DD303 /* SettingsManager.swift */; };
+		978689892C7C85AE006DD303 /* ExposureCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978689882C7C85AE006DD303 /* ExposureCalculator.swift */; };
+		97ED73912C8EC22600C6C0C0 /* StandardCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97ED738F2C8EC22600C6C0C0 /* StandardCalculatorView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9736D15F2D25B20000FA2988 /* InitialSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialSetupView.swift; sourceTree = "<group>"; };
+		973BC9522D2580DB00A21086 /* CalculationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationMode.swift; sourceTree = "<group>"; };
+		97579E7A2C8EE28800C2F9DA /* CountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownView.swift; sourceTree = "<group>"; };
+		97579E7C2C8EE98A00C2F9DA /* countdown_finish.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = countdown_finish.mp3; sourceTree = "<group>"; };
+		97579E812C8F19A400C2F9DA /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		9771957E2C9BD6B700D1E40C /* FilterSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSelectionView.swift; sourceTree = "<group>"; };
+		978689702C7C52CA006DD303 /* LongExpoOwlCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LongExpoOwlCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		978689732C7C52CA006DD303 /* LongExpoOwlCalcApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongExpoOwlCalcApp.swift; sourceTree = "<group>"; };
+		978689752C7C52CA006DD303 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		978689772C7C52CC006DD303 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9786897A2C7C52CC006DD303 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		978689822C7C675F006DD303 /* Settingsview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settingsview.swift; sourceTree = "<group>"; };
+		978689842C7C72F4006DD303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		978689862C7C7692006DD303 /* SettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
+		978689882C7C85AE006DD303 /* ExposureCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposureCalculator.swift; sourceTree = "<group>"; };
+		97ED738F2C8EC22600C6C0C0 /* StandardCalculatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardCalculatorView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9786896D2C7C52CA006DD303 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		978689672C7C52CA006DD303 = {
+			isa = PBXGroup;
+			children = (
+				978689722C7C52CA006DD303 /* LongExpoOwlCalc */,
+				978689712C7C52CA006DD303 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		978689712C7C52CA006DD303 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				978689702C7C52CA006DD303 /* LongExpoOwlCalc.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		978689722C7C52CA006DD303 /* LongExpoOwlCalc */ = {
+			isa = PBXGroup;
+			children = (
+				978689842C7C72F4006DD303 /* Info.plist */,
+				978689732C7C52CA006DD303 /* LongExpoOwlCalcApp.swift */,
+				9736D15F2D25B20000FA2988 /* InitialSetupView.swift */,
+				97579E812C8F19A400C2F9DA /* Localizable.xcstrings */,
+				97579E7A2C8EE28800C2F9DA /* CountdownView.swift */,
+				97ED738F2C8EC22600C6C0C0 /* StandardCalculatorView.swift */,
+				978689822C7C675F006DD303 /* Settingsview.swift */,
+				973BC9522D2580DB00A21086 /* CalculationMode.swift */,
+				978689752C7C52CA006DD303 /* ContentView.swift */,
+				9771957E2C9BD6B700D1E40C /* FilterSelectionView.swift */,
+				978689882C7C85AE006DD303 /* ExposureCalculator.swift */,
+				97579E7C2C8EE98A00C2F9DA /* countdown_finish.mp3 */,
+				978689862C7C7692006DD303 /* SettingsManager.swift */,
+				978689772C7C52CC006DD303 /* Assets.xcassets */,
+				978689792C7C52CC006DD303 /* Preview Content */,
+			);
+			path = LongExpoOwlCalc;
+			sourceTree = "<group>";
+		};
+		978689792C7C52CC006DD303 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9786897A2C7C52CC006DD303 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9786896F2C7C52CA006DD303 /* LongExpoOwlCalc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9786897E2C7C52CC006DD303 /* Build configuration list for PBXNativeTarget "LongExpoOwlCalc" */;
+			buildPhases = (
+				9786896C2C7C52CA006DD303 /* Sources */,
+				9786896D2C7C52CA006DD303 /* Frameworks */,
+				9786896E2C7C52CA006DD303 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LongExpoOwlCalc;
+			productName = LongExpoOwlCalc;
+			productReference = 978689702C7C52CA006DD303 /* LongExpoOwlCalc.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		978689682C7C52CA006DD303 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					9786896F2C7C52CA006DD303 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 9786896B2C7C52CA006DD303 /* Build configuration list for PBXProject "LongExpoOwlCalc" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+				"zh-Hant",
+			);
+			mainGroup = 978689672C7C52CA006DD303;
+			productRefGroup = 978689712C7C52CA006DD303 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9786896F2C7C52CA006DD303 /* LongExpoOwlCalc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9786896E2C7C52CA006DD303 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9786897B2C7C52CC006DD303 /* Preview Assets.xcassets in Resources */,
+				97579E822C8F19A400C2F9DA /* Localizable.xcstrings in Resources */,
+				978689782C7C52CC006DD303 /* Assets.xcassets in Resources */,
+				97579E7D2C8EE98A00C2F9DA /* countdown_finish.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9786896C2C7C52CA006DD303 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				978689872C7C7692006DD303 /* SettingsManager.swift in Sources */,
+				978689762C7C52CA006DD303 /* ContentView.swift in Sources */,
+				97579E7B2C8EE28800C2F9DA /* CountdownView.swift in Sources */,
+				978689742C7C52CA006DD303 /* LongExpoOwlCalcApp.swift in Sources */,
+				97ED73912C8EC22600C6C0C0 /* StandardCalculatorView.swift in Sources */,
+				9771957F2C9BD6BA00D1E40C /* FilterSelectionView.swift in Sources */,
+				978689892C7C85AE006DD303 /* ExposureCalculator.swift in Sources */,
+				973BC9532D2580DF00A21086 /* CalculationMode.swift in Sources */,
+				978689832C7C675F006DD303 /* Settingsview.swift in Sources */,
+				9736D1602D25B20400FA2988 /* InitialSetupView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9786897C2C7C52CC006DD303 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9786897D2C7C52CC006DD303 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9786897F2C7C52CC006DD303 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "\"LongExpoOwlCalc/Preview Content\"";
+				DEVELOPMENT_TEAM = JWR6FDB52H;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LongExpoOwlCalc/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "ND Owl Calc";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JamesPhotography.LongExpoOwlCalc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		978689802C7C52CC006DD303 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "\"LongExpoOwlCalc/Preview Content\"";
+				DEVELOPMENT_TEAM = JWR6FDB52H;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LongExpoOwlCalc/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "ND Owl Calc";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JamesPhotography.LongExpoOwlCalc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9786896B2C7C52CA006DD303 /* Build configuration list for PBXProject "LongExpoOwlCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9786897C2C7C52CC006DD303 /* Debug */,
+				9786897D2C7C52CC006DD303 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9786897E2C7C52CC006DD303 /* Build configuration list for PBXNativeTarget "LongExpoOwlCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9786897F2C7C52CC006DD303 /* Debug */,
+				978689802C7C52CC006DD303 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 978689682C7C52CA006DD303 /* Project object */;
+}
