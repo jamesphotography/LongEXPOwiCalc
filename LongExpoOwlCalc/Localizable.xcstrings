@@ -43,6 +43,18 @@
             "state" : "new",
             "value" : "%1$d:%2$02d"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$d:%2$02d"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$d:%2$02d"
+          }
         }
       }
     },
@@ -103,10 +115,38 @@
       }
     },
     "1 min" : {
-      "comment" : "Preset for 1 minute"
+      "comment" : "Preset for 1 minute",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 分钟"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 min"
+          }
+        }
+      }
     },
     "1 sec" : {
-      "comment" : "Preset for 1 second"
+      "comment" : "Preset for 1 second",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 秒钟"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 sec"
+          }
+        }
+      }
     },
     "1 stop" : {
       "localizations" : {
@@ -141,25 +181,123 @@
       }
     },
     "2 min" : {
-      "comment" : "Preset for 2 minutes"
+      "comment" : "Preset for 2 minutes",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2 分钟"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2 min"
+          }
+        }
+      }
     },
     "5 min" : {
-      "comment" : "Preset for 5 minutes"
+      "comment" : "Preset for 5 minutes",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5 分钟"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5 min"
+          }
+        }
+      }
     },
     "5 sec" : {
-      "comment" : "Preset for 5 seconds"
+      "comment" : "Preset for 5 seconds",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5 秒钟"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5 sec"
+          }
+        }
+      }
     },
     "15 sec" : {
-      "comment" : "Preset for 15 seconds"
+      "comment" : "Preset for 15 seconds",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "15 秒钟"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "15 sec"
+          }
+        }
+      }
     },
     "30 sec" : {
-      "comment" : "Preset for 30 seconds"
+      "comment" : "Preset for 30 seconds",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "30 秒钟"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "30 sec"
+          }
+        }
+      }
     },
     "Adjusted aperture: f/%.1f" : {
-      "comment" : "Log message"
+      "comment" : "Log message",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "光圈调整为： f/%.1f"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "調整後光圈：f/%.1f"
+          }
+        }
+      }
     },
     "Adjusted ISO: %d" : {
-      "comment" : "Log message"
+      "comment" : "Log message",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ISO调整为：%d"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "調整後 ISO：%d"
+          }
+        }
+      }
     },
     "Adjustment Priority" : {
       "localizations" : {
@@ -308,7 +446,20 @@
       }
     },
     "Calculation completed, ready to show results:" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "计算结束，准备显示结果"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "計算完成，準備顯示結果："
+          }
+        }
+      }
     },
     "CALCULATION MODE Ver 1.3" : {
       "localizations" : {
@@ -349,13 +500,54 @@
       }
     },
     "Calculation Result" : {
-      "comment" : "Title for result popup"
+      "comment" : "Title for result popup",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "计算结果"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "計算結果"
+          }
+        }
+      }
     },
     "Calculation started:" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "计算开始："
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "計算開始："
+          }
+        }
+      }
     },
     "Camera Settings" : {
-      "comment" : "Heading for camera settings"
+      "comment" : "Heading for camera settings",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "相机设置"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "相機設置"
+          }
+        }
+      }
     },
     "Cancel" : {
       "localizations" : {
@@ -374,22 +566,106 @@
       }
     },
     "Consider unlocking aperture for more precise exposure" : {
-      "comment" : "Suggestion in aperture priority mode"
+      "comment" : "Suggestion in aperture priority mode",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "考虑解锁光圈以获得更精确的曝光"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "考慮解鎖光圈以獲得更精確的曝光"
+          }
+        }
+      }
     },
     "Consider unlocking ISO for more precise exposure" : {
-      "comment" : "Suggestion in ISO priority mode"
+      "comment" : "Suggestion in ISO priority mode",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "考虑解锁ISO以获得更精确的曝光"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "考慮解鎖 ISO 以獲得更精確的曝光"
+          }
+        }
+      }
     },
     "Countdown seconds: %d" : {
-      "comment" : "Log message"
+      "comment" : "Log message",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "倒数秒数：%d"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "倒計時秒數：%d"
+          }
+        }
+      }
     },
     "Crowd Removal" : {
-      "comment" : "Photography style"
+      "comment" : "Photography style",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "人群消除"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "人群移除"
+          }
+        }
+      }
     },
     "Crowd Removal Effect" : {
-      "comment" : "Photography effect for exposures up to 60 seconds"
+      "comment" : "Photography effect for exposures up to 60 seconds",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "人群消除效果"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "人群移除效果"
+          }
+        }
+      }
     },
     "Current Settings" : {
-      "comment" : "Section title for current camera settings"
+      "comment" : "Section title for current camera settings",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "当前设定"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "當前設置"
+          }
+        }
+      }
     },
     "Done" : {
       "localizations" : {
@@ -424,10 +700,38 @@
       }
     },
     "Exposure difference of %.1f stops" : {
-      "comment" : "Warning about large exposure difference"
+      "comment" : "Warning about large exposure difference",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "曝光差异为 %.1f 档"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "曝光差異為 %.1f 檔"
+          }
+        }
+      }
     },
     "Exposure time: %@" : {
-      "comment" : "Log message"
+      "comment" : "Log message",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "曝光时间：%@"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " 曝光時間：%@"
+          }
+        }
+      }
     },
     "f/%@" : {
       "localizations" : {
@@ -446,7 +750,21 @@
       }
     },
     "Fog Effect" : {
-      "comment" : "Photography effect for exposures up to 120 seconds\nPhotography style"
+      "comment" : "Photography effect for exposures up to 120 seconds\nPhotography style",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "海浪雾化效果"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "霧效果"
+          }
+        }
+      }
     },
     "Initial Setup" : {
       "localizations" : {
@@ -600,7 +918,21 @@
       }
     },
     "Long Exposure" : {
-      "comment" : "Section title for long exposure settings"
+      "comment" : "Section title for long exposure settings",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "长曝光"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "長時間曝光"
+          }
+        }
+      }
     },
     "Lowest Native ISO" : {
       "localizations" : {
@@ -683,16 +1015,72 @@
       }
     },
     "Minimalist" : {
-      "comment" : "Photography style"
+      "comment" : "Photography style",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "极简主义"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "極簡主義"
+          }
+        }
+      }
     },
     "Minimalist Landscape" : {
-      "comment" : "Photography effect for exposures over 120 seconds"
+      "comment" : "Photography effect for exposures over 120 seconds",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "极简主义风景"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "極簡主義風景"
+          }
+        }
+      }
     },
     "Misty Water Effect" : {
-      "comment" : "Photography effect for exposures up to 30 seconds"
+      "comment" : "Photography effect for exposures up to 30 seconds",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "水雾效果"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "水霧效果"
+          }
+        }
+      }
     },
     "Misty Waves" : {
-      "comment" : "Photography style"
+      "comment" : "Photography style",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "朦胧波浪"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "朦朧波浪"
+          }
+        }
+      }
     },
     "My Filters: %@" : {
       "localizations" : {
@@ -808,7 +1196,21 @@
       }
     },
     "Note" : {
-      "comment" : "Title for information level warning"
+      "comment" : "Title for information level warning",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "备注"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "備註"
+          }
+        }
+      }
     },
     "Off" : {
       "localizations" : {
@@ -860,13 +1262,55 @@
       }
     },
     "Original aperture: f/%.1f" : {
-      "comment" : "Log message"
+      "comment" : "Log message",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "初始光圈: f/%.1f"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "原始光圈：f/%.1f"
+          }
+        }
+      }
     },
     "Original ISO: %d" : {
-      "comment" : "Log message"
+      "comment" : "Log message",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "初始 ISO: %d"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "原始 ISO：%d"
+          }
+        }
+      }
     },
     "Original shutter speed: %@" : {
-      "comment" : "Log message"
+      "comment" : "Log message",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "初始快门速度: %@"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "原始快門速度：%@"
+          }
+        }
+      }
     },
     "Pause" : {
       "comment" : "Pause button text",
@@ -951,10 +1395,38 @@
       }
     },
     "Recommended Filters" : {
-      "comment" : "Heading for filter recommendations"
+      "comment" : "Heading for filter recommendations",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "推荐灰镜"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " 推薦濾鏡"
+          }
+        }
+      }
     },
     "Recommended filters: %@" : {
-      "comment" : "Log message"
+      "comment" : "Log message",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "推荐灰镜: %@"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "推薦濾鏡：%@"
+          }
+        }
+      }
     },
     "Required: Select Your ND Filters" : {
       "localizations" : {
@@ -1118,7 +1590,21 @@
       }
     },
     "Small exposure difference of %.1f stops" : {
-      "comment" : "Information about small exposure difference"
+      "comment" : "Information about small exposure difference",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "微小的曝光差异为 %.1f 档"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "微小的曝光差異為 %.1f 檔"
+          }
+        }
+      }
     },
     "Start" : {
       "comment" : "Start button text",
@@ -1154,40 +1640,202 @@
       }
     },
     "Start Exposure" : {
-      "comment" : "Button to start exposure countdown"
+      "comment" : "Button to start exposure countdown",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "开始曝光"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "開始曝光"
+          }
+        }
+      }
     },
     "Subtle Motion Blur" : {
-      "comment" : "Photography effect for exposures up to 1 second"
+      "comment" : "Photography effect for exposures up to 1 second",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "微妙的动态模糊"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "微妙的動態模糊"
+          }
+        }
+      }
     },
     "Suggestions:" : {
-      "comment" : "Heading for suggestions"
+      "comment" : "Heading for suggestions",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "建议"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "建議："
+          }
+        }
+      }
     },
     "Suitable for: %@" : {
-      "comment" : "Label for photography effect suggestion"
+      "comment" : "Label for photography effect suggestion",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "适用于：%@"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "適用於：%@"
+          }
+        }
+      }
     },
     "Target Exposure Time" : {
-      "comment" : "Heading for exposure time\nLabel for target exposure time"
+      "comment" : "Heading for exposure time\nLabel for target exposure time",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "目标曝光时间"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "目標曝光時間"
+          }
+        }
+      }
     },
     "Target exposure time: %.1f seconds" : {
-      "comment" : "Log message"
+      "comment" : "Log message",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "目标曝光时间：%.1f 秒"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "目標曝光時間：%.1f 秒"
+          }
+        }
+      }
     },
     "Try a different ND filter combination" : {
-      "comment" : "Suggestion in auto mode\nSuggestion when no adjustment was made"
+      "comment" : "Suggestion in auto mode\nSuggestion when no adjustment was made",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "尝试不同的ND滤镜组合"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "嘗試不同的ND濾鏡組合"
+          }
+        }
+      }
     },
     "Warning" : {
-      "comment" : "Title for warning level alert"
+      "comment" : "Title for warning level alert",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "警告"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "警告"
+          }
+        }
+      }
     },
     "Waterfall/Stream" : {
-      "comment" : "Photography style"
+      "comment" : "Photography style",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "瀑布/溪流"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "瀑布/溪流"
+          }
+        }
+      }
     },
     "Waterfall/Stream Effect" : {
-      "comment" : "Photography effect for exposures up to 5 seconds"
+      "comment" : "Photography effect for exposures up to 5 seconds",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "瀑布/溪流效果"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "瀑布/溪流效果"
+          }
+        }
+      }
     },
     "Wave Streaking" : {
-      "comment" : "Photography style"
+      "comment" : "Photography style",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "海浪拉丝"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "波浪拖尾"
+          }
+        }
+      }
     },
     "Wave Streaking Effect" : {
-      "comment" : "Photography effect for exposures up to 15 seconds"
+      "comment" : "Photography effect for exposures up to 15 seconds",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "海浪拉丝效果"
+          }
+        }
+      }
     },
     "You can only select up to 2 ND filters. Please deselect one before selecting another." : {
       "localizations" : {
@@ -1238,22 +1886,106 @@
         }
       }
     },
-    "建议:" : {
+    "了解更多" : {
 
+    },
+    "建议:" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "建议:"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "建議"
+          }
+        }
+      }
     },
     "提示" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "提示"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "提示"
+          }
+        }
+      }
     },
     "曝光时间" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "曝光时间"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "曝光時間"
+          }
+        }
+      }
     },
     "滤镜" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "滤镜"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "濾鏡"
+          }
+        }
+      }
     },
     "相机设置" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "相机设置"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "相機設定"
+          }
+        }
+      }
     },
     "警告" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "警告"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "警告"
+          }
+        }
+      }
+    },
+    "跳过广告" : {
 
     }
   },

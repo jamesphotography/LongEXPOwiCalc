@@ -12,6 +12,7 @@
 		974687642D8EB5E90025C361 /* CalculationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974687632D8EB5E70025C361 /* CalculationResult.swift */; };
 		974687662D8EB7710025C361 /* ResultPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974687652D8EB76F0025C361 /* ResultPopupView.swift */; };
 		974687682D8EC69F0025C361 /* ExposureResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974687672D8EC69A0025C361 /* ExposureResult.swift */; };
+		9746876A2D8EECAB0025C361 /* SplashAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974687692D8EECA90025C361 /* SplashAdView.swift */; };
 		97579E7B2C8EE28800C2F9DA /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97579E7A2C8EE28800C2F9DA /* CountdownView.swift */; };
 		97579E7D2C8EE98A00C2F9DA /* countdown_finish.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 97579E7C2C8EE98A00C2F9DA /* countdown_finish.mp3 */; };
 		97579E822C8F19A400C2F9DA /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 97579E812C8F19A400C2F9DA /* Localizable.xcstrings */; };
@@ -32,6 +33,7 @@
 		974687632D8EB5E70025C361 /* CalculationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationResult.swift; sourceTree = "<group>"; };
 		974687652D8EB76F0025C361 /* ResultPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPopupView.swift; sourceTree = "<group>"; };
 		974687672D8EC69A0025C361 /* ExposureResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposureResult.swift; sourceTree = "<group>"; };
+		974687692D8EECA90025C361 /* SplashAdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashAdView.swift; sourceTree = "<group>"; };
 		97579E7A2C8EE28800C2F9DA /* CountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownView.swift; sourceTree = "<group>"; };
 		97579E7C2C8EE98A00C2F9DA /* countdown_finish.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = countdown_finish.mp3; sourceTree = "<group>"; };
 		97579E812C8F19A400C2F9DA /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				97579E7C2C8EE98A00C2F9DA /* countdown_finish.mp3 */,
 				978689862C7C7692006DD303 /* SettingsManager.swift */,
 				978689772C7C52CC006DD303 /* Assets.xcassets */,
+				974687692D8EECA90025C361 /* SplashAdView.swift */,
 				978689792C7C52CC006DD303 /* Preview Content */,
 			);
 			path = LongExpoOwlCalc;
@@ -190,6 +193,7 @@
 				974687682D8EC69F0025C361 /* ExposureResult.swift in Sources */,
 				97ED73912C8EC22600C6C0C0 /* StandardCalculatorView.swift in Sources */,
 				9771957F2C9BD6BA00D1E40C /* FilterSelectionView.swift in Sources */,
+				9746876A2D8EECAB0025C361 /* SplashAdView.swift in Sources */,
 				978689892C7C85AE006DD303 /* ExposureCalculator.swift in Sources */,
 				973BC9532D2580DF00A21086 /* CalculationMode.swift in Sources */,
 				974687642D8EB5E90025C361 /* CalculationResult.swift in Sources */,
