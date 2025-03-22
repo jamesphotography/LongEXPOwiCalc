@@ -36,11 +36,11 @@ struct ExposureResult {
         if shutterSeconds >= 60 {
             let minutes = Int(shutterSeconds) / 60
             let remainingSeconds = Int(shutterSeconds) % 60
-            return String(format: "%d分 %d秒", minutes, remainingSeconds)
+            return String(format: NSLocalizedString("%dm %ds", comment: "Time format"), minutes, remainingSeconds)
         } else if shutterSeconds.truncatingRemainder(dividingBy: 1) == 0 {
-            return String(format: "%d秒", Int(shutterSeconds))
+            return String(format: NSLocalizedString("%ds", comment: "Time format"), Int(shutterSeconds))
         } else {
-            return String(format: "%.1f秒", shutterSeconds)
+            return String(format: NSLocalizedString("%.1fs", comment: "Time format"), shutterSeconds)
         }
     }
     
@@ -52,19 +52,19 @@ struct ExposureResult {
     // 获取适合的摄影效果
     var photographyEffect: String {
         if shutterSeconds <= 1 {
-            return "微运动模糊效果"
+            return NSLocalizedString("Subtle Motion Blur", comment: "Photography effect for exposures up to 1 second")
         } else if shutterSeconds <= 5 {
-            return "流水/瀑布效果"
+            return NSLocalizedString("Waterfall/Stream Effect", comment: "Photography effect for exposures up to 5 seconds")
         } else if shutterSeconds <= 15 {
-            return "海浪拉丝效果"
+            return NSLocalizedString("Wave Streaking Effect", comment: "Photography effect for exposures up to 15 seconds")
         } else if shutterSeconds <= 30 {
-            return "海浪雾化效果"
+            return NSLocalizedString("Misty Water Effect", comment: "Photography effect for exposures up to 30 seconds")
         } else if shutterSeconds <= 60 {
-            return "人流消失效果"
+            return NSLocalizedString("Crowd Removal Effect", comment: "Photography effect for exposures up to 60 seconds")
         } else if shutterSeconds <= 120 {
-            return "浓雾效果"
+            return NSLocalizedString("Fog Effect", comment: "Photography effect for exposures up to 120 seconds")
         } else {
-            return "极简风景效果"
+            return NSLocalizedString("Minimalist Landscape", comment: "Photography effect for exposures over 120 seconds")
         }
     }
 }

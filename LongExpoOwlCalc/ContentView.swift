@@ -20,13 +20,13 @@ struct ContentView: View {
     
     // 常用曝光时间预设及其用途
     let exposureTimePresets: [(time: Double, index: Int, name: String, usage: String)] = [
-        (1, 0, "1秒", "海浪拉丝"),
-        (5, 8, "5秒", "流水/瀑布"),
-        (15, 12, "15秒", "海浪雾化"),
-        (30, 15, "30秒", "海浪雾化"),
-        (60, 17, "1分钟", "人流消失"),
-        (120, 19, "2分钟", "浓雾效果"),
-        (300, 22, "5分钟", "极简风景")
+        (1, 0, NSLocalizedString("1 sec", comment: "Preset for 1 second"), NSLocalizedString("Wave Streaking", comment: "Photography style")),
+        (5, 8, NSLocalizedString("5 sec", comment: "Preset for 5 seconds"), NSLocalizedString("Waterfall/Stream", comment: "Photography style")),
+        (15, 12, NSLocalizedString("15 sec", comment: "Preset for 15 seconds"), NSLocalizedString("Misty Waves", comment: "Photography style")),
+        (30, 15, NSLocalizedString("30 sec", comment: "Preset for 30 seconds"), NSLocalizedString("Misty Waves", comment: "Photography style")),
+        (60, 17, NSLocalizedString("1 min", comment: "Preset for 1 minute"), NSLocalizedString("Crowd Removal", comment: "Photography style")),
+        (120, 19, NSLocalizedString("2 min", comment: "Preset for 2 minutes"), NSLocalizedString("Fog Effect", comment: "Photography style")),
+        (300, 22, NSLocalizedString("5 min", comment: "Preset for 5 minutes"), NSLocalizedString("Minimalist", comment: "Photography style"))
     ]
     
     // 选择显示哪些曝光时间作为标记
@@ -53,10 +53,10 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             Form {
-                Section(header: Text("当前设置").frame(maxWidth: .infinity, alignment: .center)) {
+                Section(header: Text(NSLocalizedString("Current Settings", comment: "Section title for current camera settings")).frame(maxWidth: .infinity, alignment: .center)) {
                     HStack {
                         Image(systemName: "camera.circle")
-                        Picker("Shutter Speed", selection: $shutterSpeedIndex) {
+                        Picker(NSLocalizedString("Shutter Speed", comment: "Label for shutter speed picker"), selection: $shutterSpeedIndex) {
                             ForEach(0..<shutterSpeeds.count, id: \.self) {
                                 Text(self.shutterSpeeds[$0])
                             }
@@ -67,7 +67,7 @@ struct ContentView: View {
                     VStack(alignment: .leading, spacing: 6) {
                         HStack {
                             Image(systemName: "camera.aperture")
-                            Text("Aperture")
+                            Text(NSLocalizedString("Aperture", comment: "Label for aperture control"))
                             Spacer()
                             Text("f/\(String(format: "%.1f", availableApertures[Int(apertureIndex)]))")
                                 .fontWeight(.medium)
@@ -197,12 +197,12 @@ struct ContentView: View {
                     }
                 }
                 
-                Section(header: Text("长曝光").frame(maxWidth: .infinity, alignment: .center)) {
+                Section(header: Text(NSLocalizedString("Long Exposure", comment: "Section title for long exposure settings")).frame(maxWidth: .infinity, alignment: .center)) {
                     // 曝光时间显示
                     VStack(alignment: .leading, spacing: 6) {
                         HStack {
                             Image(systemName: "stopwatch")
-                            Text("目标曝光时间")
+                            Text(NSLocalizedString("Target Exposure Time", comment: "Label for target exposure time"))
                             Spacer()
                             Text(formatExposureTime(exposureTimes[Int(exposureTimeIndex)]))
                                 .fontWeight(.medium)
@@ -234,7 +234,7 @@ struct ContentView: View {
                                         .overlay(
                                             RoundedRectangle(cornerRadius: 8)
                                                 .stroke(Int(exposureTimeIndex) == preset.index ?
-                                                        Color.blue : Color.gray.opacity(0.3), lineWidth: 1)
+                                                       Color.blue : Color.gray.opacity(0.3), lineWidth: 1)
                                         )
                                     }
                                     .buttonStyle(BorderlessButtonStyle())
@@ -303,7 +303,7 @@ struct ContentView: View {
                 
                 Section {
                     Button(action: startCalculation) {
-                        Text("计算")
+                        Text(NSLocalizedString("Calculate", comment: "Button to calculate exposure"))
                             .frame(maxWidth: .infinity)
                             .padding()
                             .background(Color.blue)
@@ -316,17 +316,17 @@ struct ContentView: View {
                             .font(.footnote)
                             .foregroundColor(.secondary)
                         Text(String(format: NSLocalizedString("Calculation Mode: %@, ISO Step: %@, Extended ISO: %@",
-                                                              comment: ""),
-                                    settingsManager.calculationMode == .none ? NSLocalizedString("Auto", comment: "") : settingsManager.calculationMode.rawValue.capitalized,
-                                    settingsManager.isoStepSize == 1.0 ? NSLocalizedString("1 stop", comment: "") : NSLocalizedString("1/3 stop", comment: ""),
-                                    settingsManager.enableExtendedISO ? NSLocalizedString("On", comment: "") : NSLocalizedString("Off", comment: "")
+                            comment: ""),
+                            settingsManager.calculationMode == .none ? NSLocalizedString("Auto", comment: "") : settingsManager.calculationMode.rawValue.capitalized,
+                            settingsManager.isoStepSize == 1.0 ? NSLocalizedString("1 stop", comment: "") : NSLocalizedString("1/3 stop", comment: ""),
+                            settingsManager.enableExtendedISO ? NSLocalizedString("On", comment: "") : NSLocalizedString("Off", comment: "")
                         ))
-                        .font(.footnote)
-                        .foregroundColor(.secondary)
+                            .font(.footnote)
+                            .foregroundColor(.secondary)
                     }
                 }
             }
-            .navigationTitle("Pro Calculator")
+            .navigationTitle(NSLocalizedString("Pro Calculator", comment: "Navigation title"))
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarItems(
                 leading: Image("ND OWL")
@@ -353,9 +353,9 @@ struct ContentView: View {
             }
             .alert(isPresented: $showNoFilterAlert) {
                 Alert(
-                    title: Text("No ND Filters Selected"),
-                    message: Text("You must select the ND filters you own before calculating."),
-                    dismissButton: .default(Text("OK")) {
+                    title: Text(NSLocalizedString("No ND Filters Selected", comment: "Alert title for no filters selected")),
+                    message: Text(NSLocalizedString("You must select the ND filters you own before calculating.", comment: "Alert message for no filters selected")),
+                    dismissButton: .default(Text(NSLocalizedString("OK", comment: "Alert dismiss button"))) {
                         showSettingsView = true
                     }
                 )
@@ -416,11 +416,11 @@ struct ContentView: View {
         if seconds >= 60 {
             let minutes = Int(seconds) / 60
             let remainingSeconds = Int(seconds) % 60
-            return String(format: "%d:%02d", minutes, remainingSeconds)
+            return String(format: NSLocalizedString("%d:%02d", comment: "Time format minutes:seconds"), minutes, remainingSeconds)
         } else if seconds.truncatingRemainder(dividingBy: 1) == 0 {
-            return String(format: "%d秒", Int(seconds))
+            return String(format: NSLocalizedString("%ds", comment: "Time format seconds"), Int(seconds))
         } else {
-            return String(format: "%.1f秒", seconds)
+            return String(format: NSLocalizedString("%.1fs", comment: "Time format decimal seconds"), seconds)
         }
     }
     
@@ -428,11 +428,11 @@ struct ContentView: View {
         if settingsManager.selectedNDFilters.isEmpty {
             showNoFilterAlert = true
         } else {
-            print("计算开始:")
-            print("- 原始光圈: f/\(String(format: "%.1f", availableApertures[Int(apertureIndex)]))")
-            print("- 原始ISO: \(isoValues[Int(isoIndex)])")
-            print("- 原始快门: \(shutterSpeeds[shutterSpeedIndex])")
-            print("- 目标曝光时间: \(exposureTimes[Int(exposureTimeIndex)])秒")
+            print(NSLocalizedString("Calculation started:", comment: ""))
+            print("- " + NSLocalizedString("Original aperture: f/%.1f", comment: "Log message").replacingOccurrences(of: "%.1f", with: String(format: "%.1f", availableApertures[Int(apertureIndex)])))
+            print("- " + NSLocalizedString("Original ISO: %d", comment: "Log message").replacingOccurrences(of: "%d", with: "\(isoValues[Int(isoIndex)])"))
+            print("- " + NSLocalizedString("Original shutter speed: %@", comment: "Log message").replacingOccurrences(of: "%@", with: shutterSpeeds[shutterSpeedIndex]))
+            print("- " + NSLocalizedString("Target exposure time: %.1f seconds", comment: "Log message").replacingOccurrences(of: "%.1f", with: "\(exposureTimes[Int(exposureTimeIndex)])"))
             
             let result = ExposureCalculator.calculateExposure(
                 shutterSpeed: shutterSpeeds[shutterSpeedIndex],
@@ -450,12 +450,12 @@ struct ContentView: View {
                 self.exposureResult = result
                 self.countdownSeconds = Int(self.exposureTimes[Int(self.exposureTimeIndex)])
                 
-                print("计算完成，准备显示结果:")
-                print("- 推荐滤镜: \(result.formattedNDFilters)")
-                print("- 调整后光圈: f/\(String(format: "%.1f", result.aperture))")
-                print("- 调整后ISO: \(result.iso)")
-                print("- 曝光时间: \(result.formattedShutterSpeed)")
-                print("- 倒计时秒数: \(self.countdownSeconds)")
+                print(NSLocalizedString("Calculation completed, ready to show results:", comment: ""))
+                print("- " + NSLocalizedString("Recommended filters: %@", comment: "Log message").replacingOccurrences(of: "%@", with: result.formattedNDFilters))
+                print("- " + NSLocalizedString("Adjusted aperture: f/%.1f", comment: "Log message").replacingOccurrences(of: "%.1f", with: String(format: "%.1f", result.aperture)))
+                print("- " + NSLocalizedString("Adjusted ISO: %d", comment: "Log message").replacingOccurrences(of: "%d", with: "\(result.iso)"))
+                print("- " + NSLocalizedString("Exposure time: %@", comment: "Log message").replacingOccurrences(of: "%@", with: result.formattedShutterSpeed))
+                print("- " + NSLocalizedString("Countdown seconds: %d", comment: "Log message").replacingOccurrences(of: "%d", with: "\(self.countdownSeconds)"))
                 
                 withAnimation {
                     self.showResultPopup = true

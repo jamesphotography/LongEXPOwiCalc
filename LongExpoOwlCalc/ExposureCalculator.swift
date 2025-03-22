@@ -71,25 +71,25 @@ class ExposureCalculator {
         var warningLevel = WarningLevel.none
         var warningMessage: String? = nil
         var suggestion: String? = nil
-        
+
         if abs(finalRemainingStops) > 0.3 {
             if abs(finalRemainingStops) <= 0.5 {
                 warningLevel = .info
-                warningMessage = String(format: "存在 %.1f 档的轻微曝光差异", abs(finalRemainingStops))
+                warningMessage = String(format: NSLocalizedString("Small exposure difference of %.1f stops", comment: "Information about small exposure difference"), abs(finalRemainingStops))
             } else {
                 warningLevel = .warning
-                warningMessage = String(format: "曝光误差 %.1f 档", abs(finalRemainingStops))
+                warningMessage = String(format: NSLocalizedString("Exposure difference of %.1f stops", comment: "Warning about large exposure difference"), abs(finalRemainingStops))
                 
                 if !adjustmentMade {
-                    suggestion = "尝试使用不同的滤镜组合"
+                    suggestion = NSLocalizedString("Try a different ND filter combination", comment: "Suggestion when no adjustment was made")
                 } else {
                     switch calculationMode {
                     case .aperture:
-                        suggestion = "考虑解除光圈锁定以获得更精确的曝光"
+                        suggestion = NSLocalizedString("Consider unlocking aperture for more precise exposure", comment: "Suggestion in aperture priority mode")
                     case .iso:
-                        suggestion = "考虑解除感光度锁定以获得更精确的曝光"
+                        suggestion = NSLocalizedString("Consider unlocking ISO for more precise exposure", comment: "Suggestion in ISO priority mode")
                     case .none:
-                        suggestion = "尝试使用不同的滤镜组合"
+                        suggestion = NSLocalizedString("Try a different ND filter combination", comment: "Suggestion in auto mode")
                     }
                 }
             }

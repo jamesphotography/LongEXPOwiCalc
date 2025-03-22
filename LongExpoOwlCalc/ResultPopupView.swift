@@ -21,7 +21,7 @@ struct ResultPopupView: View {
             VStack(spacing: 0) {
                 // 标题栏
                 HStack {
-                    Text("计算结果")
+                    Text(NSLocalizedString("Calculation Result", comment: "Title for result popup"))
                         .font(.headline)
                         .foregroundColor(.primary)
                     
@@ -42,7 +42,7 @@ struct ResultPopupView: View {
                     VStack(spacing: 20) {
                         // 推荐滤镜卡片
                         VStack(spacing: 5) {
-                            Text("推荐使用滤镜")
+                            Text(NSLocalizedString("Recommended Filters", comment: "Heading for filter recommendations"))
                                 .font(.subheadline)
                                 .foregroundColor(.secondary)
                                 .frame(maxWidth: .infinity, alignment: .center)
@@ -65,7 +65,7 @@ struct ResultPopupView: View {
                         
                         // 目标曝光时间卡片
                         VStack(spacing: 5) {
-                            Text("目标曝光时间")
+                            Text(NSLocalizedString("Target Exposure Time", comment: "Heading for exposure time"))
                                 .font(.subheadline)
                                 .foregroundColor(.secondary)
                                 .frame(maxWidth: .infinity, alignment: .center)
@@ -91,7 +91,7 @@ struct ResultPopupView: View {
                             .cornerRadius(12)
                             
                             // 显示适合的摄影效果
-                            Text("适合：\(result.photographyEffect)")
+                            Text(NSLocalizedString("Suitable for: %@", comment: "Label for photography effect suggestion").replacingOccurrences(of: "%@", with: result.photographyEffect))
                                 .font(.subheadline)
                                 .foregroundColor(.secondary)
                                 .frame(maxWidth: .infinity, alignment: .center)
@@ -101,7 +101,7 @@ struct ResultPopupView: View {
                         
                         // 相机设置卡片
                         VStack(spacing: 5) {
-                            Text("相机设置调整")
+                            Text(NSLocalizedString("Camera Settings", comment: "Heading for camera settings"))
                                 .font(.subheadline)
                                 .foregroundColor(.secondary)
                                 .frame(maxWidth: .infinity, alignment: .center)
@@ -109,7 +109,7 @@ struct ResultPopupView: View {
                             VStack(spacing: 15) {
                                 // 光圈设置
                                 HStack(spacing: 20) {
-                                    Text("光圈")
+                                    Text(NSLocalizedString("Aperture", comment: "Label for aperture setting"))
                                         .font(.headline)
                                         .frame(width: 40, alignment: .leading)
                                     
@@ -185,7 +185,7 @@ struct ResultPopupView: View {
                                     Image(systemName: result.warningLevel.icon)
                                         .foregroundColor(result.warningLevel.color)
                                     
-                                    Text(result.warningLevel == .info ? "提示" : "警告")
+                                    Text(result.warningLevel == .info ? NSLocalizedString("Note", comment: "Title for information level warning") : NSLocalizedString("Warning", comment: "Title for warning level alert"))
                                         .font(.headline)
                                         .foregroundColor(result.warningLevel.color)
                                 }
@@ -195,7 +195,7 @@ struct ResultPopupView: View {
                                 
                                 if let suggestion = result.suggestion {
                                     VStack(alignment: .leading, spacing: 6) {
-                                        Text("建议:")
+                                        Text(NSLocalizedString("Suggestions:", comment: "Heading for suggestions"))
                                             .font(.subheadline)
                                             .fontWeight(.medium)
                                         
@@ -223,7 +223,7 @@ struct ResultPopupView: View {
                                 HStack {
                                     Image(systemName: "timer")
                                         .font(.headline)
-                                    Text("开始曝光")
+                                    Text(NSLocalizedString("Start Exposure", comment: "Button to start exposure countdown"))
                                         .font(.headline)
                                 }
                                 .frame(maxWidth: .infinity)
