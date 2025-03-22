@@ -2,6 +2,7 @@
   "sourceLanguage" : "en",
   "strings" : {
     "\n\n⚠️ Warning: Exposure difference of %.1f stops" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -18,6 +19,7 @@
       }
     },
     "\n\nℹ️ Note: Small exposure difference of %.1f stops" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -34,6 +36,7 @@
       }
     },
     "\n- Consider unlocking aperture for more precise exposure" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -50,6 +53,7 @@
       }
     },
     "\n- Consider unlocking ISO for more precise exposure" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -66,6 +70,7 @@
       }
     },
     "\n- Try a different ND filter combination" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -82,6 +87,7 @@
       }
     },
     "\nSuggestions:" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -220,6 +226,7 @@
       }
     },
     "Adjusted Aperture to f/%.1f, Remaining Stops: %d (%.2f)\n" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -242,6 +249,7 @@
       }
     },
     "Adjusted ISO to %d, Remaining Stops: %d (%.2f)\n" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -312,6 +320,7 @@
       }
     },
     "Aperture Priority Mode: Adjusting ISO only\n" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -376,6 +385,7 @@
       }
     },
     "Auto Mode: Adjusting both Aperture and ISO\n" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -456,6 +466,7 @@
       }
     },
     "Calculation Mode: %@\n\n" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -494,6 +505,7 @@
       }
     },
     "Calculation Process:\n" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -521,22 +533,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "取消"
-          }
-        }
-      }
-    },
-    "CURRENT SETTINGS" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "当前设置"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "當前設定"
           }
         }
       }
@@ -590,6 +586,7 @@
       }
     },
     "Initial Settings: Shutter Speed %@, Aperture f/%.1f, ISO %d\n" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -715,6 +712,7 @@
       }
     },
     "ISO Priority Mode: Adjusting Aperture only\n" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -774,22 +772,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "稍後"
-          }
-        }
-      }
-    },
-    "LONG EXPOSURE" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "长曝光"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "長曝光"
           }
         }
       }
@@ -956,6 +938,7 @@
     },
     "ND Filters: %@\nAperture: f/%.1f, ISO %d\nShutter Speed: %@" : {
       "comment" : "Result format",
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -1139,6 +1122,7 @@
       }
     },
     "Recommended ND Filter Combination: %@\n" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -1155,6 +1139,7 @@
       }
     },
     "Remaining Stops After Filters: %d stops (%.2f)\n\n" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -1177,6 +1162,7 @@
       }
     },
     "Remaining stops within acceptable range (±0.3), no adjustment needed\n" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -1385,23 +1371,8 @@
         }
       }
     },
-    "Target" : {
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "目标曝光时间"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "目標曝光時間"
-          }
-        }
-      }
-    },
     "Target Exposure Time: %.1f seconds\n" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -1418,6 +1389,7 @@
       }
     },
     "Total Stops Difference: %d stops (%.2f)\n\n" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -1486,6 +1458,54 @@
           }
         }
       }
+    },
+    "光圈" : {
+
+    },
+    "建议:" : {
+
+    },
+    "开始曝光" : {
+
+    },
+    "当前设置" : {
+
+    },
+    "推荐使用滤镜" : {
+
+    },
+    "提示" : {
+
+    },
+    "曝光时间" : {
+
+    },
+    "滤镜" : {
+
+    },
+    "目标曝光时间" : {
+
+    },
+    "相机设置" : {
+
+    },
+    "相机设置调整" : {
+
+    },
+    "警告" : {
+
+    },
+    "计算" : {
+
+    },
+    "计算结果" : {
+
+    },
+    "适合：%@" : {
+
+    },
+    "长曝光" : {
+
     }
   },
   "version" : "1.0"
