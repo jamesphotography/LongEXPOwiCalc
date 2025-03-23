@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - OWL ND CALC 猫头鹰长曝光计算器</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <meta name="description" content="联系OWL ND CALC猫头鹰长曝光计算器团队 - 提出问题、反馈建议或寻求技术支持">
+    <script src="js/include.js"></script>
+</head>
+<body>
+    <!-- 头部占位符 -->
+    <div id="header-placeholder"></div>
+
+    <section class="contact-section">
+        <div class="container">
+            <h1 class="section-title">联系我们</h1>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>联系方式</h2>
+                    
+                    <div class="contact-method">
+                        <h3><i class="fas fa-envelope"></i> 电子邮件</h3>
+                        <p>技术支持: <a href="mailto:support@jamesphotography.com.au">support@jamesphotography.com.au</a></p>
+                        <p>商务合作: <a href="mailto:james@jamesphotography.com.au">james@jamesphotography.com.au</a></p>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <h3><i class="fas fa-phone-alt"></i> 电话</h3>
+                        <p>澳大利亚: <a href="tel:+61430920216">+61 430 920 216</a></p>
+                        <p>工作时间: 周一至周五, 9:00 - 17:00 (AEST)</p>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <h3><i class="fas fa-map-marker-alt"></i> 地址</h3>
+                        <p>James Photography Pty Ltd</p>
+                        <p>Adelaide, South Australia 5045</p>
+                        <p>Australia</p>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <h3><i class="fas fa-comment"></i> 社交媒体</h3>
+                        <p>关注我们获取最新动态、教程和灵感</p>
+                        
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/jamesphotography_com_au/" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/jamesyuphotography/" class="social-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.youtube.com/@JamesZhenYu" class="social-link" target="_blank"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2>发送消息</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">您的姓名</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">电子邮箱</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">主题</label>
+                            <select id="subject" class="form-control" required>
+                                <option value="" disabled selected>请选择主题</option>
+                                <option value="技术支持">技术支持</option>
+                                <option value="功能建议">功能建议</option>
+                                <option value="错误报告">错误报告</option>
+                                <option value="商务合作">商务合作</option>
+                                <option value="其他">其他</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">消息内容</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">发送消息</button>
+                        
+                        <div class="form-message success">
+                            您的消息已成功发送！我们会尽快回复您。
+                        </div>
+                        
+                        <div class="form-message error">
+                            消息发送失败，请稍后再试或直接通过电子邮件联系我们。
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部占位符 -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contactForm');
+            const successMessage = document.querySelector('.form-message.success');
+            const errorMessage = document.querySelector('.form-message.error');
+            
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // 在实际应用中，这里应该发送表单数据到服务器
+                // 这里仅模拟提交过程
+                
+                // 隐藏之前的消息
+                successMessage.style.display = 'none';
+                errorMessage.style.display = 'none';
+                
+                // 模拟表单处理延迟
+                setTimeout(function() {
+                    // 模拟成功提交
+                    successMessage.style.display = 'block';
+                    
+                    // 重置表单
+                    contactForm.reset();
+                    
+                    // 5秒后隐藏成功消息
+                    setTimeout(function() {
+                        successMessage.style.display = 'none';
+                    }, 5000);
+                }, 1000);
+                
+                // 如果要模拟失败情况，可以使用以下代码
+                /*
+                setTimeout(function() {
+                    errorMessage.style.display = 'block';
+                    
+                    setTimeout(function() {
+                        errorMessage.style.display = 'none';
+                    }, 5000);
+                }, 1000);
+                */
+            });
+        });
+    </script>
+</body>
+</html>

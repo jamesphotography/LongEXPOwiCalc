@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>摄影教程 - OWL ND CALC 猫头鹰长曝光计算器</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <meta name="description" content="学习如何使用OWL ND CALC猫头鹰长曝光计算器拍摄令人惊叹的长曝光照片 - 包含瀑布、星轨、城市灯光等场景的专业摄影技巧">
+    <script src="js/include.js"></script>
+</head>
+<body>
+    <!-- 头部占位符 -->
+    <div id="header-placeholder"></div>
+
+    <section class="tutorials-section">
+        <div class="container">
+            <h1 class="section-title">长曝光摄影教程</h1>
+            
+            <div class="tag-container">
+                <button class="tag-btn active" data-filter="all">全部教程</button>
+                <button class="tag-btn" data-filter="waterfall">瀑布流水</button>
+                <button class="tag-btn" data-filter="seascape">海景摄影</button>
+                <button class="tag-btn" data-filter="tips">实用技巧</button>
+            </div>
+            
+            <div class="tutorials-grid">
+                <div class="tutorial-card" data-category="waterfall">
+                    <div class="tutorial-image">
+                        <img src="images/tutorials/waterfall.jpg" alt="如何拍摄丝绸般平滑的瀑布">
+                    </div>
+                    <div class="tutorial-content">
+                        <div class="tutorial-meta">
+                            <span><i class="far fa-calendar"></i> 2025-03-10</span>
+                            <span><i class="far fa-clock"></i> 12分钟阅读</span>
+                        </div>
+                        <h3>如何拍摄丝绸般平滑的瀑布</h3>
+                        <p>学习如何使用ND滤镜和正确的相机设置，将湍急的瀑布拍摄成梦幻般平滑的丝绸效果。本教程涵盖从设备选择到后期处理的完整工作流程。</p>
+                        <a href="tutorial-waterfall.html" class="read-more">阅读教程 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="tutorial-card" data-category="seascape">
+                    <div class="tutorial-image">
+                        <img src="images/tutorials/seascape.jpg" alt="海浪雾化效果：使用ND滤镜实现30秒长曝光">
+                    </div>
+                    <div class="tutorial-content">
+                        <div class="tutorial-meta">
+                            <span><i class="far fa-calendar"></i> 2025-03-15</span>
+                            <span><i class="far fa-clock"></i> 15分钟阅读</span>
+                        </div>
+                        <h3>海浪雾化效果：使用ND滤镜实现30秒长曝光</h3>
+                        <p>学习如何使用ND滤镜拍摄梦幻般的海浪雾化效果。本教程详细讲解如何通过30秒长曝光创造出平滑如丝的海景照片，包括器材选择、最佳设置和后期处理技巧。</p>
+                        <a href="tutorial-seascape.html" class="read-more">阅读教程 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="tutorial-card" data-category="tips">
+                    <div class="tutorial-image">
+                        <img src="images/tutorials/cloudstreak.jpg" alt="极简云彩拉丝效果：15分钟长曝光技法">
+                    </div>
+                    <div class="tutorial-content">
+                        <div class="tutorial-meta">
+                            <span><i class="far fa-calendar"></i> 2025-03-18</span>
+                            <span><i class="far fa-clock"></i> 14分钟阅读</span>
+                        </div>
+                        <h3>极简云彩拉丝效果：15分钟长曝光技法</h3>
+                        <p>学习如何使用ND滤镜创造流畅的云彩拉丝效果，打造极简主义风格的摄影作品。本教程涵盖器材选择、构图原则和后期处理技巧。</p>
+                        <a href="tutorial-cloud-streaks.html" class="read-more">阅读教程 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="tutorial-card" data-category="tips">
+                    <div class="tutorial-image">
+                        <img src="images/tutorials/composition.jpg" alt="长曝光中的构图技巧">
+                    </div>
+                    <div class="tutorial-content">
+                        <div class="tutorial-meta">
+                            <span><i class="far fa-calendar"></i> 2024-12-18</span>
+                            <span><i class="far fa-clock"></i> 8分钟阅读</span>
+                        </div>
+                        <h3>长曝光中的构图技巧</h3>
+                        <p>探索长曝光摄影中的构图原则和技巧，学习如何平衡静态和动态元素，创作出视觉冲击力强的长曝光照片。</p>
+                        <a href="tutorial-composition.html" class="read-more">阅读教程 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部占位符 -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 分类筛选功能
+            const filterButtons = document.querySelectorAll('.tag-btn');
+            const tutorialCards = document.querySelectorAll('.tutorial-card');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const filter = button.getAttribute('data-filter');
+                    
+                    // 激活当前按钮
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+                    
+                    // 筛选教程卡片
+                    tutorialCards.forEach(card => {
+                        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
